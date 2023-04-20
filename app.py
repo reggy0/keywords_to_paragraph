@@ -5,7 +5,7 @@ from happytransformer import HappyGeneration, GENSettings
 app = Flask(__name__,template_folder='Tamplate')
 
 
-happy_gen = HappyGeneration("GPT-NEO", "EleutherAI/gpt-neo-1.3B")
+happy_gen = HappyGeneration("GPT-NEO", "EleutherAI/gpt-neo-2.7B")
 
 training_cases = """Keywords:Self Programmable,medical monitoring device,Uploads algorithms, applications,outside computers,Wireless Communication
 Output:A network system managing an on-demand service within a geographic region can receive, over a network, multi-user request data corresponding to a request for service for a plurality of users. The request data can indicate one or more start locations, a plurality of users, and one or more service locations. In response to receiving the request data, the network system can select a set of service providers from a plurality of candidate service providers in the geographic region to provide the requested service. The service providers can be selected based on optimizations of one or more service parameters including estimated fares for the plurality of users, ETAs to the start location, ETAs to the service locations, etc. The network system can further determine routes for the set of service providers from their respective locations to the start or service location(s) and from the start or 
